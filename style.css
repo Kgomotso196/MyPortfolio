@@ -40,6 +40,10 @@ nav {
   margin-right: 40px;
 }
 
+.fa-solid, .fa-bars {
+  color:black;
+}
+
 .heroIntro {
   position: relative;
   background: url("https://kgomotso196.github.io/MyPortfolio/pngFiles/MobileView.png");
@@ -77,7 +81,7 @@ nav {
   font-size: 20px;
   line-height: 28px;
   text-align: center;
-  color: #000;
+  color: #172b4d;
   margin-left: 18px;
 }
 
