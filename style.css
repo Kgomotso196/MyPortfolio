@@ -35,6 +35,7 @@ nav {
 .hamburgerButton {
   display: block;
   font-size: 23px;
+  /* gap: 3px; */
   float: right;
   line-height: 50px;
   margin-right: 40px;
@@ -64,13 +65,26 @@ nav {
 .heroIntroHeading {
   width: 100%;
   color: #172b4d;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
   text-align: center;
   padding-top: 85px;
+  margin-left: 18px;
+}
+
+.secondHeroIntroHeading {
+  width: 100%;
+  color: #172b4d;
+  margin-bottom: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  /* padding-top: 85px; */
   margin-left: 18px;
 }
 
@@ -95,8 +109,17 @@ nav {
   margin-top: 32px;
 }
 
-.spanText {
+.pText {
+  width: 100%;
   color: #36b37e;
+  margin-bottom: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  /* padding-top: 85px; */
+  margin-left: 18px;
 }
 
 .scrollButton {
