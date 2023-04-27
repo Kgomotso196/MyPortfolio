@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  height: auto;
+  font-family: "Inter", sans-serif;
+}
+
+nav {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+}
+
+.firstTitle {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #28352f;
+  margin-left: 20px;
+}
+
+.hamburgerButton {
+  display: block;
+  font-size: 23px;
+
+  /* gap: 3px; */
+  float: right;
+  line-height: 50px;
+  margin-right: 40px;
+}
+
+.fa-bars {
+  color: black;
+}
+
+.heroIntro {
+  position: relative;
+  background: url("https://kgomotso196.github.io/MyPortfolio/pngFiles/MobileView.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.heroIntroContainer {
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.heroIntroHeading {
+  width: 100%;
+  color: #172b4d;
+
+  /* margin-bottom: 1rem; */
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  padding-top: 85px;
+  margin-left: 18px;
+}
+
+.secondHeroIntroHeading {
+  width: 100%;
+  color: #172b4d;
+
+  /* margin-bottom: 1rem; */
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+
+  /* padding-top: 85px; */
+  margin-left: 18px;
+}
+
+.heroIntroDescription {
+  margin-bottom: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #172b4d;
+  margin-left: 18px;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+  cursor: pointer;
+  list-style-type: none;
+  margin-top: 32px;
+}
+
+.pText {
+  width: 100%;
+  color: #36b37e;
+  margin-bottom: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+
+  /* padding-top: 85px; */
+  margin-left: 18px;
+}
+
+.scrollButton {
+  margin-top: 64px;
+  display: flex;
+  justify-content: center;
+}
+
+.icons:hover {
+  background: #c5e9da;
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    display: none;
+  }
+
+  .heroIntroContainer {
+    padding-top: 140px;
+  }
+
+  .heroIntro {
+    position: relative;
+    background: url("https://kgomotso196.github.io/MyPortfolio/pngFiles/DesktopView.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    padding-bottom: 280px;
+  }
+}
