@@ -21,10 +21,14 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+
   /* justify-self: center; */
+
   /* width: 90%; */
+
   /* margin: auto; */
   padding: 0 24px;
+
   /* text-align: center; */
 }
 
@@ -92,7 +96,7 @@ form textarea {
 }
 
 .footerBtn {
-  text-align: center;  
+  text-align: center;
 }
 
 .getInTouch {
@@ -108,6 +112,7 @@ form textarea {
   border-radius: 4px;
   margin-top: 24px;
   text-align: center;
+
   /* margin-left: 99px; */
 }
 
