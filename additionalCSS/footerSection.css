@@ -21,11 +21,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  justify-self: center;
+  /* justify-self: center; */
   /* width: 90%; */
   /* margin: auto; */
   padding: 0 24px;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .btn-center {
@@ -48,7 +48,7 @@
 }
 
 form input {
-  width: 327px;
+  /* width: 327px; */
   height: 48px;
   border-radius: 4px;
   border: 1px solid #d0d9d4;
@@ -67,7 +67,7 @@ form input {
 }
 
 form textarea {
-  width: 327px;
+  /* width: 327px; */
   height: 114px;
   border-radius: 4px;
   border: 1px solid #60c095;
@@ -91,6 +91,10 @@ form textarea {
   color: black;
 }
 
+.footerBtn {
+  text-align: center;  
+}
+
 .getInTouch {
   padding: 12px;
   background: #36b37f;
@@ -103,7 +107,8 @@ form textarea {
   border-style: none;
   border-radius: 4px;
   margin-top: 24px;
-  margin-left: 99px;
+  text-align: center;
+  /* margin-left: 99px; */
 }
 
 .footer {
