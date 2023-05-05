@@ -152,3 +152,69 @@ hr {
   background: #0d151e;
   border-radius: 10px;
 }
+
+@media (max-width: 768px) {
+  .footerImg {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footerFrameMob,
+  .footerEmail,
+  .footerHr {
+    display: none;
+  }
+  .footerDesktopContainer {
+    display: grid;
+    grid-template-columns: 463px auto;
+    gap: 24px;
+    padding-top: 80px;
+    padding-bottom: 154px;
+    margin: 0 134px;
+    position: relative;
+  }
+  .lastMsg {
+    margin: 0;
+  }
+  .lastMsgText {
+    color: #172b4d;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    line-height: 52px;
+    font-style: normal;
+    padding-top: 50px;
+  }
+  .contactForm {
+    width: 100%;
+    height: 48px;
+  }
+
+  form input {
+    width: 584px;
+    height: 48px;
+  }
+
+  form textarea {
+    width: 584px;
+    height: 114px;
+  }
+
+  .getInTouch {
+    margin: 0;
+    margin-top: 24px;
+  }
+
+  .footerImg {
+    padding: 0;
+    background-image: url(https://kgomotso196.github.io/MyPortfolio/pngFiles/frameOne.png), url(https://kgomotso196.github.io/MyPortfolio/pngFiles/frameTwo.png), url(https://kgomotso196.github.io/MyPortfolio/pngFiles/frameThree.png);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 0% 80%, 20% 70%, 100% 55%;
+  }
+
+  .footerSocialIconsContainer {
+    border-top: 1px solid #dfe1e6;
+  }
+}
