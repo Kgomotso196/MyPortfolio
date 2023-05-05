@@ -165,7 +165,6 @@ hr {
     margin: 0 auto;
     display: grid;
     grid-template-columns: minmax(0, 2.5fr) minmax(0, 3fr);
-    /* column-gap: 2.4rem; */
     margin-bottom: 16.5rem;
     padding-right: 150px;
     padding-left: 50px;
