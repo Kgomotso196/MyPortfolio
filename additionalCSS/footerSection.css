@@ -15,13 +15,15 @@
 .click:hover {
   cursor: pointer;
   background-color: #008552;
+  transform: scale(1.1);
 }
 
 .contactForm {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 24px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .btn-center {
@@ -44,6 +46,7 @@
 }
 
 form input {
+  width: 327px;
   height: 48px;
   border-radius: 4px;
   border: 1px solid #d0d9d4;
@@ -62,6 +65,7 @@ form input {
 }
 
 form textarea {
+  width: 327px;
   height: 114px;
   border-radius: 4px;
   border: 1px solid #60c095;
@@ -85,10 +89,6 @@ form textarea {
   color: black;
 }
 
-.footerBtn {
-  text-align: center;
-}
-
 .getInTouch {
   padding: 12px;
   background: #36b37f;
@@ -101,26 +101,18 @@ form textarea {
   border-style: none;
   border-radius: 4px;
   margin-top: 24px;
-  text-align: center;
-}
-
-.footer {
-  display: flex;
-  flex-direction: column;
 }
 
 .footerSocialIcons {
-  margin-top: 46px;
   display: flex;
   justify-content: center;
   gap: 20px;
   align-items: center;
+  padding: 24px;
 }
 
 .footerSocialIconsContainer {
   position: relative;
-  display: flex;
-  justify-content: center;
 }
 
 .footerFrameMob {
@@ -153,10 +145,11 @@ hr {
   border-radius: 10px;
 }
 
-@media (max-width: 768px) {
-  .footerImg {
-    display: none;
-  }
+.footerBtn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -165,18 +158,22 @@ hr {
   .footerHr {
     display: none;
   }
+
   .footerDesktopContainer {
+    max-width: 116rem;
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: 463px auto;
-    gap: 24px;
-    padding-top: 80px;
-    padding-bottom: 154px;
-    margin: 0 134px;
-    position: relative;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+    column-gap: 2.4rem;
+    margin-bottom: 16.5rem;
+    padding-right: 4rem;
+    padding-left: 2rem;
   }
+
   .lastMsg {
     margin: 0;
   }
+
   .lastMsgText {
     color: #172b4d;
     font-family: "Inter", sans-serif;
@@ -187,9 +184,9 @@ hr {
     font-style: normal;
     padding-top: 50px;
   }
+
   .contactForm {
     width: 100%;
-    height: 48px;
   }
 
   form input {
