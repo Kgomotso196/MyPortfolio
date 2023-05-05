@@ -10,6 +10,7 @@
   text-align: center;
   line-height: 52px;
   font-style: normal;
+  padding-left: 30%;
 }
 
 .click:hover {
@@ -163,11 +164,11 @@ hr {
     max-width: 116rem;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
-    column-gap: 2.4rem;
+    grid-template-columns: minmax(0, 2.5fr) minmax(0, 3fr);
+    /* column-gap: 2.4rem; */
     margin-bottom: 16.5rem;
-    padding-right: 4rem;
-    padding-left: 2rem;
+    padding-right: 150px;
+    padding-left: 50px;
   }
 
   .lastMsg {
@@ -186,7 +187,7 @@ hr {
   }
 
   .contactForm {
-    width: 100%;
+    width: 75%;
   }
 
   form input {
