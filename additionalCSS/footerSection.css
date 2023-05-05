@@ -190,12 +190,12 @@ hr {
   }
 
   form input {
-    width: 584px;
+    width: auto;
     height: 48px;
   }
 
   form textarea {
-    width: 584px;
+    width: auto;
     height: 114px;
   }
 
