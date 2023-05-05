@@ -45,6 +45,10 @@
   transform: translate(10px);
 }
 
+button {
+  transition: all 0.5s ease-in-out;
+}
+
 form input {
   width: 327px;
   height: 48px;
