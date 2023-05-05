@@ -209,7 +209,7 @@ hr {
 
   .footerImg {
     padding: 0;
-    background-image: url(https://kgomotso196.github.io/MyPortfolio/pngFiles/frameOne.png), url(https://kgomotso196.github.io/MyPortfolio/pngFiles/frameTwo.png), url(https://kgomotso196.github.io/MyPortfolio/pngFiles/frameThree.png);
+    background-image: url("https://kgomotso196.github.io/MyPortfolio/pngFiles/frameOne.png"), url("https://kgomotso196.github.io/MyPortfolio/pngFiles/frameTwo.png"), url("https://kgomotso196.github.io/MyPortfolio/pngFiles/frameThree.png");
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: 0% 80%, 20% 70%, 100% 55%;
   }
