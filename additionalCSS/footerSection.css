@@ -1,5 +1,5 @@
 .lastMsg {
-  margin: 60px 24px;
+  margin: 34px 24px;
 }
 
 .lastMsgText {
@@ -10,18 +10,21 @@
   text-align: center;
   line-height: 52px;
   font-style: normal;
+  padding-left: 30%;
 }
 
 .click:hover {
   cursor: pointer;
   background-color: #008552;
+  transform: scale(1.1);
 }
 
 .contactForm {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 24px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .btn-center {
@@ -44,6 +47,7 @@
 }
 
 form input {
+  width: 327px;
   height: 48px;
   border-radius: 4px;
   border: 1px solid #d0d9d4;
@@ -62,6 +66,7 @@ form input {
 }
 
 form textarea {
+  width: 327px;
   height: 114px;
   border-radius: 4px;
   border: 1px solid #60c095;
@@ -85,10 +90,6 @@ form textarea {
   color: black;
 }
 
-.footerBtn {
-  text-align: center;
-}
-
 .getInTouch {
   padding: 12px;
   background: #36b37f;
@@ -101,26 +102,18 @@ form textarea {
   border-style: none;
   border-radius: 4px;
   margin-top: 24px;
-  text-align: center;
-}
-
-.footer {
-  display: flex;
-  flex-direction: column;
 }
 
 .footerSocialIcons {
-  margin-top: 46px;
   display: flex;
   justify-content: center;
   gap: 20px;
   align-items: center;
+  padding: 24px;
 }
 
 .footerSocialIconsContainer {
   position: relative;
-  display: flex;
-  justify-content: center;
 }
 
 .footerFrameMob {
@@ -151,4 +144,74 @@ hr {
   height: 4px;
   background: #0d151e;
   border-radius: 10px;
+}
+
+.footerBtn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footerFrameMob,
+  .footerEmail,
+  .footerHr {
+    display: none;
+  }
+
+  .footerDesktopContainer {
+    max-width: 116rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(0, 2.5fr) minmax(0, 3fr);
+    margin-bottom: 16.5rem;
+    padding-right: 150px;
+    padding-left: 50px;
+  }
+
+  .lastMsg {
+    margin: 0;
+  }
+
+  .lastMsgText {
+    color: #172b4d;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    line-height: 52px;
+    font-style: normal;
+    padding-top: 50px;
+  }
+
+  .contactForm {
+    width: 75%;
+  }
+
+  form input {
+    width: auto;
+    height: 48px;
+  }
+
+  form textarea {
+    width: auto;
+    height: 114px;
+  }
+
+  .getInTouch {
+    margin: 0;
+    margin-top: 24px;
+  }
+
+  .footerImg {
+    padding: 0;
+    background-image: url("https://kgomotso196.github.io/MyPortfolio/pngFiles/frameOne.png"), url("https://kgomotso196.github.io/MyPortfolio/pngFiles/frameTwo.png"), url("https://kgomotso196.github.io/MyPortfolio/pngFiles/frameThree.png");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: 0% 80%, 20% 70%, 100% 55%;
+  }
+
+  .footerSocialIconsContainer {
+    border-top: 1px solid #dfe1e6;
+  }
 }
