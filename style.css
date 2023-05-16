@@ -24,6 +24,27 @@ nav {
   background: transparent;
 }
 
+.hidden{
+  display: block;
+}
+
+.navLinks{
+  display: none;
+}
+
+.nav-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  height: 100vh;
+  padding: 2rem;
+  width: 100%;
+}
+.nav-menu li a{
+  text-decoration: none;
+}
+
 .items {
   height: 0;
 }
@@ -62,14 +83,11 @@ nav {
 }
 
 .hamburger {
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
-  padding-right: 32px;
+  display: block;
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .navLinks {
     display: none;
   }
@@ -79,14 +97,14 @@ nav {
   .hamItems {
     display: none;
   }
-}
+} */
 
-.hamItems {
+/* .hamItems {
   position: fixed;
   width: 100%;
   height: 100%;
   background: #fff;
-}
+} */
 
 .btnX {
   font-size: 40px;
@@ -99,9 +117,11 @@ nav {
 }
 
 .stroke {
-  width: 20px;
+  display: block;
+  width: 25px;
   height: 3px;
   background-color: #28352f;
+  margin: 5px auto;
   border-radius: 8px;
   list-style-type: none;
 }
@@ -187,8 +207,12 @@ nav {
 }
 
 @media screen and (min-width: 768px) {
-  .hamburger,
+  /* .hamburger,
   .firstTitle {
+    display: none;
+  } */
+
+  .hidden{
     display: none;
   }
 

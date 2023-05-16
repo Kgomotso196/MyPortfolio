@@ -17,18 +17,24 @@
   </head>
   <body>
     <header>
-      <section class="hamItems">
-        <div class="closeBtn">
-          <button class="btnX" type="button">&times</button>
-        </div>
+      <!-- <section class="hamItems">
+        
         <nav class="items">
+          <ul class="hamburger" id="hamButton">
+            <li class="stroke"></li>
+            <li class="stroke"></li>
+            <li class="stroke"></li>
+          </ul>
+          <div class="closeBtn">
+            <button class="btnX" type="button">&times</button>
+          </div>
           <ul class="subItems">
             <li class="subItem"><a href="#portfolio">Portfolio</a></li>
             <li class="subItem"><a href="#about">About</a></li>
             <li class="subItem"><a href="#contact">Contact</a></li>
           </ul>
         </nav>
-      </section>
+      </section> -->
       <nav class="mobileNav">
         <a href="#" class="firstTitle"> </a>
         <ul class="navLinks">
@@ -36,11 +42,22 @@
           <li class="navLinksEffect"><a href="#">About</a></li>
           <li class="navLinksEffect"><a href="#">Contact</a></li>
         </ul>
-        <ul class="hamburger" id="hamButton">
-          <li class="stroke"></li>
-          <li class="stroke"></li>
-          <li class="stroke"></li>
-        </ul>
+        <div class="hidden">
+          <ul class="nav-menu">
+            <li class="navLinksEffect"><a href="#">Portoflio</a></li>
+            <li class="navLinksEffect"><a href="#">About</a></li>
+            <li class="navLinksEffect"><a href="#">Contact</a></li>
+          </ul>
+          <ul class="hamburger" id="hamButton">
+            <li class="stroke"></li>
+            <li class="stroke"></li>
+            <li class="stroke"></li>
+          </ul>
+          <div class="closeBtn">
+            <button class="btnX" type="button">&times</button>
+          </div>
+        </div>
+        
       </nav>
     </header>
     <section class="heroIntro">
