@@ -24,6 +24,35 @@ nav {
   background: transparent;
 }
 
+.items {
+  height: 0;
+}
+
+.invisible {
+  display: none;
+}
+
+.closeBtn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.subItems a {
+  list-style-type: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  text-decoration: none;
+  margin-top: 400px;
+  margin-left: 28px;
+  color: #3a4a42;
+}
+
+.subItem {
+  margin-bottom: 40px;
+}
+
 .firstTitle {
   font-size: 20px;
   font-weight: 600;
@@ -32,14 +61,12 @@ nav {
   margin-left: 20px;
 }
 
-.hamburgerButton {
-  display: block;
-  font-size: 23px;
-
-  /* gap: 3px; */
-  float: right;
-  line-height: 50px;
-  margin-right: 40px;
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding-right: 32px;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -48,12 +75,38 @@ nav {
   }
 }
 
-.fa-bars {
-  color: black;
+@media (max-width: 768px) {
+  .hamItems {
+    display: none;
+  }
+}
+
+.hamItems {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+
+.btnX {
+  font-size: 40px;
+  color: #67798e;
+  background-color: transparent;
+  border-color: transparent;
+  padding: 10px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.stroke {
+  width: 20px;
+  height: 3px;
+  background-color: #28352f;
+  border-radius: 8px;
+  list-style-type: none;
 }
 
 .heroIntro {
-  position: relative;
   background: url("https://kgomotso196.github.io/MyPortfolio/pngFiles/mobileView.png");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -72,8 +125,6 @@ nav {
 .heroIntroHeading {
   width: 100%;
   color: #172b4d;
-
-  /* margin-bottom: 1rem; */
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -86,15 +137,11 @@ nav {
 .secondHeroIntroHeading {
   width: 100%;
   color: #172b4d;
-
-  /* margin-bottom: 1rem; */
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
   text-align: center;
-
-  /* padding-top: 85px; */
   margin-left: 18px;
 }
 
@@ -139,12 +186,8 @@ nav {
   justify-content: center;
 }
 
-.icons:hover {
-  background: #c5e9da;
-}
-
 @media screen and (min-width: 768px) {
-  .hamburgerButton,
+  .hamburger,
   .firstTitle {
     display: none;
   }
@@ -173,7 +216,6 @@ nav {
   }
 
   .heroIntro {
-    position: relative;
     background: url("https://kgomotso196.github.io/MyPortfolio/pngFiles/desktopView.png");
     background-repeat: no-repeat;
     background-size: 100%;
@@ -182,7 +224,7 @@ nav {
   }
 
   nav {
-    position: absolute;
+    position: fixed;
     display: flex;
     justify-content: center;
   }
@@ -198,5 +240,14 @@ nav {
     font-weight: 600;
     font-size: 15px;
     line-height: 20px;
+    cursor: pointer;
+  }
+
+  .navLinksEffect:hover {
+    transform: scale(1.3);
+  }
+
+  .icons:hover {
+    transform: scale(1.3);
   }
 }

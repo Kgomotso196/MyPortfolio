@@ -67,11 +67,6 @@
   border-radius: 4px;
 }
 
-.get-my-resume-btn:hover {
-  background: #008552;
-  transform: translateY(-20px);
-}
-
 @media screen and (min-width: 768px) {
   .aboutMeBtn {
     background-image: url("https://kgomotso196.github.io/MyPortfolio/pngFiles/desktopView2About.png");

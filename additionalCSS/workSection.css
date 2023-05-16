@@ -104,14 +104,97 @@ h4 {
   border-radius: 4px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1180px) and (min-width: 768px) {
   .workContainer {
     display: grid;
-    grid-template-columns: 327px 327px 327px;
-    grid-template-rows: 474px 474px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 0;
+    justify-items: center;
+  }
+
+  .firstContainer {
+    border-radius: 8px;
+    background: #ebf0ee;
+    outline: 1px solid #d0d9d4;
+    height: 378px;
+    width: 235px;
+    left: 0;
+    top: 0;
+  }
+
+  .secondContainer {
+    border-radius: 8px;
+    margin-top: 172px;
+    background: #fff;
+    padding-top: 0;
+  }
+
+  .see-project {
+    padding: 10px;
+    background: #36b37f;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.03em;
+    color: #fff;
+    border-style: none;
+    border-radius: 4px;
+  }
+
+  .secondContainerBtn {
+    display: flex;
+    justify-content: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+
+  .languages {
+    margin-left: 5px;
+    padding: 8px 11px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 7px;
+    line-height: 16px;
+    color: #3a4a42;
+    background: #ebf0ee;
+    border-radius: 4px;
+  }
+
+  .listLanguages {
+    display: flex;
+    justify-content: center;
+  }
+
+  h4 {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    line-height: 32px;
+    margin: 0 16px;
+    color: #3a4a42;
+    font-style: normal;
+    padding-top: 6px;
+  }
+
+  .heroIntro {
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 1700px) and (min-width: 1181px) {
+  .workContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     column-gap: 24px;
     justify-content: center;
     padding-top: 62px;
+    padding-bottom: 88px;
+    padding-left: 135px;
+    padding-right: 135px;
   }
 
   .indicator {
