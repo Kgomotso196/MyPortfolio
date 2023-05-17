@@ -10,7 +10,6 @@
   text-align: center;
   line-height: 52px;
   font-style: normal;
-  padding-left: 30%;
 }
 
 .click:hover {
@@ -44,10 +43,6 @@
 
 :hover::placeholder {
   transform: translate(10px);
-}
-
-button {
-  transition: all 0.5s ease-in-out;
 }
 
 form input {
@@ -106,6 +101,7 @@ form textarea {
   border-style: none;
   border-radius: 4px;
   margin-top: 24px;
+  margin-left: 99px;
 }
 
 .footerSocialIcons {
@@ -150,13 +146,6 @@ hr {
   border-radius: 10px;
 }
 
-.footerBtn {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
 @media screen and (min-width: 768px) {
   .footerFrameMob,
   .footerEmail,
@@ -169,9 +158,10 @@ hr {
     margin: 0 auto;
     display: grid;
     grid-template-columns: minmax(0, 2.5fr) minmax(0, 3fr);
+    column-gap: 2.4rem;
     margin-bottom: 16.5rem;
-    padding-right: 150px;
-    padding-left: 50px;
+    padding-right: 4rem;
+    padding-left: 2rem;
   }
 
   .lastMsg {
@@ -190,7 +180,7 @@ hr {
   }
 
   .contactForm {
-    width: 75%;
+    width: 100%;
   }
 
   form input {
