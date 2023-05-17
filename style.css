@@ -15,34 +15,13 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-nav {
+.mobNav {
   height: 50px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: transparent;
-}
-
-.hidden{
-  display: block;
-}
-
-.navLinks{
-  display: none;
-}
-
-.nav-menu {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #fff;
-  height: 100vh;
-  padding: 2rem;
-  width: 100%;
-}
-.nav-menu li a{
-  text-decoration: none;
 }
 
 .items {
@@ -83,28 +62,31 @@ nav {
 }
 
 .hamburger {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding-right: 32px;
   cursor: pointer;
 }
 
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
   .navLinks {
     display: none;
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .hamItems {
     display: none;
   }
-} */
+}
 
-/* .hamItems {
+.hamItems {
   position: fixed;
   width: 100%;
   height: 100%;
   background: #fff;
-} */
+}
 
 .btnX {
   font-size: 40px;
@@ -117,11 +99,9 @@ nav {
 }
 
 .stroke {
-  display: block;
-  width: 25px;
+  width: 20px;
   height: 3px;
   background-color: #28352f;
-  margin: 5px auto;
   border-radius: 8px;
   list-style-type: none;
 }
@@ -154,17 +134,6 @@ nav {
   margin-left: 18px;
 }
 
-.secondHeroIntroHeading {
-  width: 100%;
-  color: #172b4d;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
-  text-align: center;
-  margin-left: 18px;
-}
-
 .heroIntroDescription {
   margin-bottom: 1rem;
   font-style: normal;
@@ -186,18 +155,8 @@ nav {
   margin-top: 32px;
 }
 
-.pText {
-  width: 100%;
-  color: #36b37e;
-  margin-bottom: 1rem;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
-  text-align: center;
-  transition: font-size 2s ease-in-out;
-  transition-delay: 3s;
-  margin-left: 18px;
+.spanText {
+  color: #1d5d46;
 }
 
 .scrollButton {
@@ -206,13 +165,9 @@ nav {
   justify-content: center;
 }
 
-@media screen and (min-width: 768px) {
-  /* .hamburger,
+@media screen and (max-width: 1920px) and (min-width: 768px) {
+  .hamburger,
   .firstTitle {
-    display: none;
-  } */
-
-  .hidden{
     display: none;
   }
 
@@ -247,7 +202,7 @@ nav {
     padding-bottom: 280px;
   }
 
-  nav {
+  .mobNav {
     position: fixed;
     display: flex;
     justify-content: center;
