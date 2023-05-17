@@ -30,7 +30,7 @@ const projectList = [
     id: 1,
     title: 'Video Player',
     discription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    imageLink: '.https://kgomotso196.github.io/MyPortfolio/pngFiles/mobileSnapshoot.png',
+    imageLink: './pngFiles/mobileSnapshoot',
     technologies: ['Ruby', 'Bootstrap', 'Javasctipt', 'Codekit', 'GitHub', 'Codepen'],
     liveLink: '#',
     sourceLink: '#',
@@ -39,7 +39,7 @@ const projectList = [
     id: 2,
     title: 'Awesome Book',
     discription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    imageLink: 'https://kgomotso196.github.io/MyPortfolio/pngFiles/mobileSnapshoot',
+    imageLink: './pngFiles/mobileSnapshoot',
     technologies: ['Ruby', 'Bootstrap', 'Javasctipt', 'Codekit', 'GitHub', 'Codepen'],
     liveLink: '#',
     sourceLink: '#',
@@ -48,7 +48,7 @@ const projectList = [
     id: 3,
     title: 'To-do List',
     discription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    imageLink: 'https://kgomotso196.github.io/MyPortfolio/pngFiles/mobileSnapshoot',
+    imageLink: './pngFiles/mobileSnapshoot',
     technologies: ['Ruby', 'Bootstrap', 'Javasctipt', 'Codekit', 'GitHub', 'Codepen'],
     liveLink: '#',
     sourceLink: '#',
@@ -57,7 +57,7 @@ const projectList = [
     id: 4,
     title: 'Netflix Clone',
     discription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    imageLink: 'https://kgomotso196.github.io/MyPortfolio/pngFiles/mobileSnapshoot',
+    imageLink: './pngFiles/mobileSnapshoot',
     technologies: ['Ruby', 'Bootstrap', 'Javasctipt', 'Codekit', 'GitHub', 'Codepen'],
     liveLink: '#',
     sourceLink: '#',
@@ -66,7 +66,7 @@ const projectList = [
     id: 5,
     title: 'Digital Clock',
     discription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    imageLink: 'https://kgomotso196.github.io/MyPortfolio/pngFiles/mobileSnapshoot',
+    imageLink: './pngFiles/mobileSnapshoot',
     technologies: ['Ruby', 'Bootstrap', 'Javasctipt', 'Codekit', 'GitHub', 'Codepen'],
     liveLink: '#',
     sourceLink: '#',
@@ -75,23 +75,23 @@ const projectList = [
     id: 6,
     title: 'Spotify Clone',
     discription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    imageLink: 'https://kgomotso196.github.io/MyPortfolio/pngFiles/mobileSnapshoot',
+    imageLink: './pngFiles/mobileSnapshoot',
     technologies: ['Ruby', 'Bootstrap', 'Javasctipt', 'Codekit', 'GitHub', 'Codepen'],
     liveLink: '#',
     sourceLink: '#',
   },
 ];
 
-const htmlStructure = (id, title, technologies) => `<div class="container1">
-        <div class="container2">
+const htmlStructure = (id, title, technologies) => `<div class="firstContainer">
+        <div class="secondContainer">
           <h3>${title}</h3>
-          <ul class="list-language">
+          <ul class="listLanguage">
             <li class="languages">${technologies[0]}</li>
             <li class="languages">${technologies[1]}</li>
             <li class="languages">${technologies[2]}</li>
             <li class="languages">${technologies[3]}</li>
           </ul>
-          <div class="container2-btn">
+          <div class="secondContainerBtn">
             <button type="button" id="project-${id}" class="see-project click">See Project</button>
           </div>
         </div>
@@ -107,11 +107,11 @@ projectList.forEach((project) => {
 const popup = (id, title, discription, imageLink, technologies, liveLink, sourceLink) => `<div class="overlay" id="popup-${id}">
 <div class="popupContainer">
   <div class="popupImgContainer1">
-    <img class="popupImg" src="https://kgomotso196.github.io/MyPortfolio/pngFiles/mobileSnapshoot"/>
+    <img class="popupImg" src="./pngFiles/mobileSnapshoot.png"/>
   </div>
   <div class="closeBtnContainer">
     <button class="closeBtn" id="closeBtn-${id}">&times</button>
-    <img class="desktopCloseBtn" src="./svgFiles/crossArrow.svg" id="deskCloseBtn-${id}"/>
+    <img class="desktopCloseBtn" src="./pngFiles/crossArrow.png" id="deskCloseBtn-${id}"/>
   </div>
   <div class="popDiv">
     <div class="popDiv1">
@@ -128,11 +128,11 @@ const popup = (id, title, discription, imageLink, technologies, liveLink, source
     <div class="popDiv3 popupBtnContainer">
       <button class="popupBtn">
         <a href="${liveLink}">See Live</a>
-        <img src="https://kgomotso196.github.io/MyPortfolio/pngFiles/liveIcon"/>
+        <img src="./pngFiles/liveIcon.png"/>
       </button>
       <button class="popupBtn">
         <a href="${sourceLink}">See Source</a>
-        <img src="https://kgomotso196.github.io/MyPortfolio/pngFiles/Vector"/>
+        <img src="./pngFiles/Vector.png"/>
       </button>
     </div>
   </div>
