@@ -10,29 +10,44 @@
       <link rel="stylesheet" href="additionalCSS/footerSection.css">
       <link rel="stylesheet" href="additionalCSS/languageSection.css">
       <link rel="stylesheet" href="additionalCSS/workSection.css">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
-      <script src="https://kit.fontawesome.com/366c518b05.js" crossorigin="anonymous"></script>
+      <script src="https://kit.fontawesome.com/366c518b05.js" crossorigin="anonymous"></script> -->
   </head>
   <body>
     <header>
-      <nav>
+      <section class="hamItems">
+        <div class="closeBtn">
+          <button class="btnX" type="button">&times</button>
+        </div>
+        <nav class="items">
+          <ul class="subItems">
+            <li class="subItem"><a href="#portfolio">Portfolio</a></li>
+            <li class="subItem"><a href="#about">About</a></li>
+            <li class="subItem"><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </section>
+      <nav class="mobNav">
         <a href="#" class="firstTitle"> </a>
-        <a href="#" class="hamburgerButton"><i class="fa-solid fa-bars"></i></a>
         <ul class="navLinks">
           <li class="navLinksEffect"><a href="#">Portoflio</a></li>
           <li class="navLinksEffect"><a href="#">About</a></li>
           <li class="navLinksEffect"><a href="#">Contact</a></li>
         </ul>
+        <ul class="hamburger" id="hamButton">
+          <li class="stroke"></li>
+          <li class="stroke"></li>
+          <li class="stroke"></li>
+        </ul>
       </nav>
     </header>
-    <section class="heroIntro">
+    <section class="heroIntro" id="portfolio">
       <div class="heroIntroContainer">
         <h1 class="heroIntroHeading">
-          Hey there. I'm Troos.
+          Hey there. I'm Troos.<br><span class="spanText">I'm a software developer</span>
         </h1>
-        <p class="pText">I'm a software developer</p>
         <p class="heroIntroDescription">
           I can help you build a product, feature or website Look through some
           of my work and experience! If you like what you see and have a project
@@ -72,7 +87,7 @@
       <div class="firstContainer">
         <div class="secondContainer">
           <h4>Multi-Post Stories Gain+Glory</h4>
-          <ul class="listLanguages">
+          <ul class="listLanguage">
             <li class="languages">Ruby on rails</li>
             <li class="languages">css</li>
             <li class="languages">JavaScript</li>
@@ -86,7 +101,7 @@
       <div class="firstContainer">
         <div class="secondContainer">
           <h4>Multi-Post Stories Gain+Glory</h4>
-          <ul class="listLanguages">
+          <ul class="listLanguage">
             <li class="languages">Ruby on rails</li>
             <li class="languages">css</li>
             <li class="languages">JavaScript</li>
@@ -100,7 +115,7 @@
       <div class="firstContainer">
         <div class="secondContainer">
           <h4>Multi-Post Stories Gain+Glory</h4>
-          <ul class="listLanguages">
+          <ul class="listLanguage">
             <li class="languages">Ruby on rails</li>
             <li class="languages">css</li>
             <li class="languages">JavaScript</li>
@@ -114,7 +129,7 @@
       <div class="firstContainer">
         <div class="secondContainer">
           <h4>Multi-Post Stories Gain+Glory</h4>
-          <ul class="listLanguages">
+          <ul class="listLanguage">
             <li class="languages">Ruby on rails</li>
             <li class="languages">css</li>
             <li class="languages">JavaScript</li>
@@ -128,7 +143,7 @@
       <div class="firstContainer">
         <div class="secondContainer">
           <h4>Multi-Post Stories Gain+Glory</h4>
-          <ul class="listLanguages">
+          <ul class="listLanguage">
             <li class="languages">Ruby on rails</li>
             <li class="languages">css</li>
             <li class="languages">JavaScript</li>
@@ -142,7 +157,7 @@
       <div class="firstContainer">
         <div class="secondContainer">
           <h4>Multi-Post Stories Gain+Glory</h4>
-          <ul class="listLanguages">
+          <ul class="listLanguage">
             <li class="languages">Ruby on rails</li>
             <li class="languages">css</li>
             <li class="languages">JavaScript</li>
@@ -154,7 +169,7 @@
         </div>
       </div>
     </section>
-    <section class="aboutMe">
+    <section class="aboutMe" id="about">
       <div class="primaryTextAboutMe">
         <h3 class="primaryTextAboutMeHeading">About me</h3>
       </div>
@@ -220,7 +235,7 @@
           </p>
         </div>
         <form
-          action="https://formspree.io/f/xaykrgow"
+          action="https://formspree.io/f/xnqyrbln"
           method="post"
           id="form"
           class="contactForm"
@@ -276,5 +291,6 @@
       <h3 class="footerEmail">kgomotsonacane@gmail.com</h3>
       <div class="footerHr"><hr></div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
