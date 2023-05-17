@@ -125,6 +125,7 @@ body {
 .heroIntroHeading {
   width: 100%;
   color: #172b4d;
+  margin-bottom: 1rem;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
