@@ -40,17 +40,14 @@
 }
 
 .firstContainer {
-  display: flex;
   border-radius: 8px;
   background: #ebf0ee;
   outline: 1px solid #d0d9d4;
 }
 
 .secondContainer {
-  width: 327px;
-  height: 222px;
   border-radius: 8px;
-  margin-top: 252px;
+  margin-top: 250px;
   background: #fff;
   padding-top: 16px;
 }
@@ -66,7 +63,7 @@ h4 {
   font-style: normal;
 }
 
-.listLanguages {
+.listLanguage {
   display: flex;
   justify-content: center;
   padding-top: 16px;
@@ -89,6 +86,7 @@ h4 {
   display: flex;
   justify-content: center;
   padding-top: 29px;
+  padding-bottom: 20px;
 }
 
 .see-project {
@@ -162,7 +160,7 @@ h4 {
     border-radius: 4px;
   }
 
-  .listLanguages {
+  .listLanguage {
     display: flex;
     justify-content: center;
   }
