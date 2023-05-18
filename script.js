@@ -174,3 +174,13 @@ projectList.forEach((project) => {
     showpop3.style.display = 'none';
   });
 });
+
+const form = document.querySelector('.contactForm');
+const email = document.querySelector('.fEmail');
+const errorMsg = document.querySelector('.errorMsg');
+form.addEventListener('submit', (e) => {
+  if (email.value !== email.value.toLowerCase()) {
+    e.preventDefault();
+    errorMsg.textContent = "Your email should be in lowercase";
+  }
+});
