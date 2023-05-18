@@ -246,12 +246,14 @@
             class="fText"
             placeholder="Full name"
             maxlength="30"
+            aria-label="Full name"
             required
           >
           <input
             type="email"
             class="fEmail"
             placeholder="Email address"
+            aria-label="Email address"
             required
           >
           <textarea
@@ -260,10 +262,12 @@
             class="fTextArea"
             maxlength="500"
             placeholder="Enter text here"
+            aria-label="Enter text here"
             required
           ></textarea>
           <div class="footerBtn">
             <button class="getInTouch click" type="submit">Get in touch</button>
+            <span class="errorMsg"></span>
           </div>
         </form>
       </div>
