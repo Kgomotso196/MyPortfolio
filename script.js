@@ -184,3 +184,26 @@ form.addEventListener('submit', (e) => {
     errorMsg.textContent = 'Your email should be in lowercase';
   }
 });
+
+const uName = document.querySelector('.fText');
+const textArea = document.querySelector('.fTextArea');
+
+function storeData() {
+  const userData = {
+    userName: uName.value,
+    userEmail: email.value,
+    userTextMsg: textArea.value,
+  };
+  localStorage.setItem('userInfo', JSON.stringify(userData));
+}
+
+uName.addEventListener('focusout', storeData);
+email.addEventListener('focusout', storeData);
+textArea.addEventListener('focusout', storeData);
+
+const uData = JSON.parse(localStorage.getItem('userInfo'));
+
+if (uData) {
+  uName.value = uData.userName;
+  email.value = uData.userEmail;
+}
