@@ -206,4 +206,5 @@ const uData = JSON.parse(localStorage.getItem('userInfo'));
 if (uData) {
   uName.value = uData.userName;
   email.value = uData.userEmail;
+  textArea.value = uData.userTextMsg;
 }
