@@ -43,7 +43,7 @@
   background: #ebf0ee;
   outline: 1px solid #d0d9d4;
   border-radius: 8px;
-  background-image: url("/pngFiles/img_avatar.png");
+  background-image: url("/pngFiles/Capstone.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -262,13 +262,13 @@ h4 {
   .firstContainer {
     background: #ebf0ee;
     outline: 1px solid #d0d9d4;
-    height: 378px;
+    height: auto;
     width: 235px;
     left: 0;
     top: 0;
     border: 1px solid #d0d9d4;
     border-radius: 8px;
-    background-image: url("/svgFiles/img_avatar.png");
+    background-image: url("/pngFiles/Capstone.png");
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -340,8 +340,9 @@ h4 {
 
 @media only screen and (min-width: 768px) {
   .popupImg {
-    content: url("https://kgomotso196.github.io/MyPortfolio/pngFiles/Snapshoot2.png");
+    content: url("https://kgomotso196.github.io/MyPortfolio/pngFiles/Capstone.png");
     width: 100%;
+    height: auto;
   }
 
   .popupContainer {

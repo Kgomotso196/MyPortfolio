@@ -28,57 +28,30 @@ const myWorksSection = document.querySelector('.workContainer');
 const projectList = [
   {
     id: 1,
-    title: 'Video Player',
-    discription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    imageLink: './pngFiles/mobileSnapshoot.png',
-    technologies: ['Ruby', 'Bootstrap', 'Javasctipt', 'Codekit', 'GitHub', 'Codepen'],
-    liveLink: '#',
-    sourceLink: '#',
+    title: 'First Capstone - Music Concert',
+    description: "FirstCapstoneProject is a two page website designed for Music Festal in Newtown.It has been designed using HTML, CSS, JS and some parts are designed dynamically like the 'the speakers' section' part, and has the functionality for both mobile-first and desktop-first versions.",
+    imageLink: './pngFiles/Capstone.png',
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
+    liveLink: 'https://kgomotso196.github.io/FirstCapstoneProject/',
+    sourceLink: 'https://github.com/Kgomotso196/FirstCapstoneProject',
   },
   {
     id: 2,
-    title: 'Awesome Book',
-    discription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    imageLink: './pngFiles/mobileSnapshoot.png',
-    technologies: ['Ruby', 'Bootstrap', 'Javasctipt', 'Codekit', 'GitHub', 'Codepen'],
-    liveLink: '#',
-    sourceLink: '#',
+    title: 'Awesome-Book-ES6',
+    description: 'Awesome Books is an app code used to enhance its organization by incorporating modules.It focuses on utilizing ES6 modules to write JavaScript code in a modular manner.',
+    imageLink: './pngFiles/AwesomeBooks.png',
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'WebPack'],
+    liveLink: 'https://kgomotso196.github.io/Awesome-Books-ES6/',
+    sourceLink: 'https://github.com/Kgomotso196/Awesome-Books-ES6',
   },
   {
     id: 3,
     title: 'To-do List',
-    discription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    imageLink: './pngFiles/mobileSnapshoot.png',
-    technologies: ['Ruby', 'Bootstrap', 'Javasctipt', 'Codekit', 'GitHub', 'Codepen'],
-    liveLink: '#',
-    sourceLink: '#',
-  },
-  {
-    id: 4,
-    title: 'Netflix Clone',
-    discription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    imageLink: './pngFiles/mobileSnapshoot.png',
-    technologies: ['Ruby', 'Bootstrap', 'Javasctipt', 'Codekit', 'GitHub', 'Codepen'],
-    liveLink: '#',
-    sourceLink: '#',
-  },
-  {
-    id: 5,
-    title: 'Digital Clock',
-    discription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    imageLink: './pngFiles/mobileSnapshoot.png',
-    technologies: ['Ruby', 'Bootstrap', 'Javasctipt', 'Codekit', 'GitHub', 'Codepen'],
-    liveLink: '#',
-    sourceLink: '#',
-  },
-  {
-    id: 6,
-    title: 'Spotify Clone',
-    discription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    imageLink: './pngFiles/mobileSnapshoot.png',
-    technologies: ['Ruby', 'Bootstrap', 'Javasctipt', 'Codekit', 'GitHub', 'Codepen'],
-    liveLink: '#',
-    sourceLink: '#',
+    description: 'To-do List is a tool used by developers to keep track of work that needs to be done, track progress, and prioritize tasks,Unit testing done using jest library.',
+    imageLink: './pngFiles/ToDos.png',
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'WebPack'],
+    liveLink: 'https://kgomotso196.github.io/Testing-To-Do-List/dist',
+    sourceLink: 'https://github.com/Kgomotso196/Testing-To-Do-List',
   },
 ];
 
@@ -104,10 +77,10 @@ projectList.forEach((project) => {
   );
 });
 
-const popup = (id, title, discription, imageLink, technologies, liveLink, sourceLink) => `<div class="overlay" id="popup-${id}">
+const popup = (id, title, description, imageLink, technologies, liveLink, sourceLink) => `<div class="overlay" id="popup-${id}">
 <div class="popupContainer">
   <div class="popupImgContainer1">
-    <img class="popupImg" src="./pngFiles/mobileSnapshoot.png"/>
+    <img class="popupImg" src="./pngFiles/Capstone.png"/>
   </div>
   <div class="closeBtnContainer">
     <button class="closeBtn" id="closeBtn-${id}">&times</button>
@@ -123,7 +96,7 @@ const popup = (id, title, discription, imageLink, technologies, liveLink, source
       </ul>
     </div>
     <div class="popDiv2">
-      <p class="popPara">${discription}</p>
+      <p class="popPara">${description}</p>
     </div>
     <div class="popDiv3 popupBtnContainer">
       <button class="popupBtn">
@@ -143,7 +116,7 @@ projectList.forEach((project) => {
   myWorksSection.innerHTML += popup(
     project.id,
     project.title,
-    project.discription,
+    project.description,
     project.imageLink,
     project.technologies,
     project.liveLink,
