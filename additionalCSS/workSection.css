@@ -276,14 +276,14 @@ h4 {
   .firstContainer {
     background: #ebf0ee;
     outline: 1px solid #d0d9d4;
-    height:fit-content;
+    height: fit-content;
     width: 235px;
     left: 0;
     top: 0;
     border: 1px solid #d0d9d4;
     border-radius: 8px;
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size: contain;
   }
 
   .secondContainer {
@@ -366,7 +366,7 @@ h4 {
   }
 }
 
-@media (max-width: 767px){
+@media (max-width: 767px) {
   .container-1 {
     background-image: url('/pngFiles/Capstone.png');
     background-size: 375px 280px;
