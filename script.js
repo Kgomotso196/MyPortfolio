@@ -28,59 +28,61 @@ const myWorksSection = document.querySelector('.workContainer');
 const projectList = [
   {
     id: 1,
-    title: 'First Capstone - Music Concert',
+    title: 'Capstone Music-Concert',
     description: "FirstCapstoneProject is a two page website designed for Music Festal in Newtown.It has been designed using HTML, CSS, JS and some parts are designed dynamically like the 'the speakers' section' part, and has the functionality for both mobile-first and desktop-first versions.",
-    imageLink: './pngFiles/Capstone.png',
+    imageLink: '/pngFiles/Capstone.png',
     technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
     liveLink: 'https://kgomotso196.github.io/FirstCapstoneProject/',
     sourceLink: 'https://github.com/Kgomotso196/FirstCapstoneProject',
   },
   {
     id: 2,
-    title: 'Awesome-Book-ES6',
+    title: 'AwesomeBooks with ES6',
     description: 'Awesome Books is an app code used to enhance its organization by incorporating modules.It focuses on utilizing ES6 modules to write JavaScript code in a modular manner.',
-    imageLink: './pngFiles/AwesomeBooks.png',
+    imageLink: '/pngFiles/AwesomeBooks.png',
     technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'WebPack'],
     liveLink: 'https://kgomotso196.github.io/Awesome-Books-ES6/',
     sourceLink: 'https://github.com/Kgomotso196/Awesome-Books-ES6',
   },
   {
     id: 3,
-    title: 'To-do List',
+    title: 'Testing To-Do-List-ES6',
     description: 'To-do List is a tool used by developers to keep track of work that needs to be done, track progress, and prioritize tasks,Unit testing done using jest library.',
-    imageLink: './pngFiles/ToDos.png',
+    imageLink: '/pngFiles/ToDos.png',
     technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'WebPack'],
     liveLink: 'https://kgomotso196.github.io/Testing-To-Do-List/dist',
     sourceLink: 'https://github.com/Kgomotso196/Testing-To-Do-List',
   },
 ];
 
-const htmlStructure = (id, title, technologies) => `<div class="firstContainer">
-        <div class="secondContainer">
-          <h3>${title}</h3>
-          <ul class="listLanguage">
-            <li class="languages">${technologies[0]}</li>
-            <li class="languages">${technologies[1]}</li>
-            <li class="languages">${technologies[2]}</li>
-            <li class="languages">${technologies[3]}</li>
-          </ul>
-          <div class="secondContainerBtn">
-            <button type="button" id="project-${id}" class="see-project click">See Project</button>
-          </div>
-        </div>
-      </div>`;
+const htmlStructure = (id, title, technologies) => `
+  <div class="firstContainer container-${id}">
+    <div class="secondContainer">
+      <h3>${title}</h3>
+      <ul class="listLanguage">
+        <li class="languages">${technologies[0]}</li>
+        <li class="languages">${technologies[1]}</li>
+        <li class="languages">${technologies[2]}</li>
+        <li class="languages">${technologies[3]}</li>
+      </ul>
+      <div class="secondContainerBtn">
+        <button type="button" id="project-${id}" class="see-project click">See Project</button>
+      </div>
+    </div>
+  </div>`;
 projectList.forEach((project) => {
   myWorksSection.innerHTML += htmlStructure(
     project.id,
     project.title,
     project.technologies,
+    project.imageLink,
   );
 });
 
 const popup = (id, title, description, imageLink, technologies, liveLink, sourceLink) => `<div class="overlay" id="popup-${id}">
 <div class="popupContainer">
   <div class="popupImgContainer1">
-    <img class="popupImg" src="./pngFiles/Capstone.png"/>
+    <img class="popupImg" src="${imageLink}"/>
   </div>
   <div class="closeBtnContainer">
     <button class="closeBtn" id="closeBtn-${id}">&times</button>
