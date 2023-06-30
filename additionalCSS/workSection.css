@@ -33,7 +33,7 @@
 .workContainer {
   display: grid;
   grid-template-columns: 327px;
-  grid-template-rows: repeat(5, 474px);
+  grid-template-rows: repeat(3, 474px);
   row-gap: 24px;
   justify-content: center;
   padding-top: 62px;
@@ -43,9 +43,8 @@
   background: #ebf0ee;
   outline: 1px solid #d0d9d4;
   border-radius: 8px;
-  background-image: url("/pngFiles/Capstone.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 430px 280px;
 }
 
 .secondContainer {
@@ -53,6 +52,21 @@
   margin-top: 273px;
   background: #fff;
   padding-top: 16px;
+}
+
+.container-1 {
+  background-image: url('/pngFiles/Capstone.png');
+  background-size: 430px 280px;
+}
+
+.container-2 {
+  background-image: url('/pngFiles/AwesomeBooks.png');
+  background-size: 405px 280px;
+}
+
+.container-3 {
+  background-image: url('/pngFiles/ToDos.png');
+  background-size: 500px 350px;
 }
 
 h3,
@@ -232,7 +246,7 @@ h4 {
   .workContainer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     column-gap: 24px;
     justify-content: center;
     padding-top: 62px;
@@ -254,7 +268,7 @@ h4 {
   .workContainer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
     column-gap: 0;
     justify-items: center;
   }
@@ -262,15 +276,14 @@ h4 {
   .firstContainer {
     background: #ebf0ee;
     outline: 1px solid #d0d9d4;
-    height: auto;
+    height:fit-content;
     width: 235px;
     left: 0;
     top: 0;
     border: 1px solid #d0d9d4;
     border-radius: 8px;
-    background-image: url("/pngFiles/Capstone.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size:contain;
   }
 
   .secondContainer {
@@ -278,6 +291,21 @@ h4 {
     margin-top: 210px;
     background: #fff;
     padding-top: 0;
+  }
+
+  .container-1 {
+    background-image: url('/pngFiles/Capstone.png');
+    background-size: 430px 280px;
+  }
+
+  .container-2 {
+    background-image: url('/pngFiles/AwesomeBooks.png');
+    background-size: 405px 280px;
+  }
+
+  .container-3 {
+    background-image: url('/pngFiles/ToDos.png');
+    background-size: 500px 350px;
   }
 
   .PopupImg {
@@ -338,9 +366,25 @@ h4 {
   }
 }
 
+@media (max-width: 767px){
+  .container-1 {
+    background-image: url('/pngFiles/Capstone.png');
+    background-size: 375px 280px;
+  }
+
+  .container-2 {
+    background-image: url('/pngFiles/AwesomeBooks.png');
+    background-size: 325px 280px;
+  }
+
+  .container-3 {
+    background-image: url('/pngFiles/ToDos.png');
+    background-size: 385px 375px;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .popupImg {
-    content: url("https://kgomotso196.github.io/MyPortfolio/pngFiles/Capstone.png");
     width: 100%;
     height: auto;
   }
