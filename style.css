@@ -208,7 +208,7 @@ body {
   }
 
   .mobNav {
-    position: fixed;
+    position: relative;
     display: flex;
     justify-content: center;
   }
@@ -225,6 +225,7 @@ body {
     font-size: 15px;
     line-height: 20px;
     cursor: pointer;
+    display: flex;
   }
 
   .navLinksEffect:hover {
