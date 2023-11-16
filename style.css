@@ -25,7 +25,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: transparent;
+  background: #fff;
+  position: fixed;
 }
 
 .items {
@@ -208,7 +209,7 @@ body {
   }
 
   .mobNav {
-    position: relative;
+    position: fixed;
     display: flex;
     justify-content: center;
   }

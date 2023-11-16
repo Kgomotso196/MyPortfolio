@@ -129,11 +129,11 @@ const popup = (id, title, description, imageLink, technologies, liveLink, source
     </div>
     <div class="popDiv3 popupBtnContainer">
       <button class="popupBtn">
-        <a href="${liveLink}">See Live</a>
+        <a href="${liveLink}" target="_blank">See Live</a>
         <img src="./pngFiles/liveIcon.png"/>
       </button>
       <button class="popupBtn">
-        <a href="${sourceLink}">See Source</a>
+        <a href="${sourceLink}" target="_blank">See Source</a>
         <img src="./pngFiles/Vector.png"/>
       </button>
     </div>

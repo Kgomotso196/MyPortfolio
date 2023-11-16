@@ -110,6 +110,16 @@ form textarea {
   margin-top: 24px;
 }
 
+.mailMe {
+  text-align: center;
+  margin-top: 10px;
+  color: #555;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+}
+
 .footerSocialIcons {
   display: flex;
   justify-content: center;
@@ -155,8 +165,9 @@ hr {
 .footerBtn {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 @media screen and (min-width: 768px) {
