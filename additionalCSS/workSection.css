@@ -55,16 +55,31 @@
 }
 
 .container-1 {
-  background-image: url('https://Kgomotso196.github.io/MyPortfolio/pngFiles/Capstone.png');
+  background-image: url('https://Kgomotso196.github.io/MyPortfolio/pngFiles/house.png');
   background-size: 430px 280px;
 }
 
 .container-2 {
-  background-image: url('https://Kgomotso196.github.io/MyPortfolio/pngFiles/AwesomeBooks.png');
+  background-image: url('https://Kgomotso196.github.io/MyPortfolio/pngFiles/budget.png');
   background-size: 405px 280px;
 }
 
 .container-3 {
+  background-image: url('https://Kgomotso196.github.io/MyPortfolio/pngFiles/shows.png');
+  background-size: 500px 350px;
+}
+
+.container-4 {
+  background-image: url('https://Kgomotso196.github.io/MyPortfolio/pngFiles/Capstone.png');
+  background-size: 430px 280px;
+}
+
+.container-5 {
+  background-image: url('https://Kgomotso196.github.io/MyPortfolio/pngFiles/AwesomeBooks.png');
+  background-size: 405px 280px;
+}
+
+.container-6 {
   background-image: url('https://Kgomotso196.github.io/MyPortfolio/pngFiles/ToDos.png');
   background-size: 500px 350px;
 }
@@ -294,16 +309,31 @@ h4 {
   }
 
   .container-1 {
-    background-image: url('https://Kgomotso196.github.io/MyPortfolio/pngFiles/Capstone.png');
+    background-image: url('https://Kgomotso196.github.io/MyPortfolio/pngFiles/house.png');
     background-size: 430px 280px;
   }
 
   .container-2 {
-    background-image: url('https://Kgomotso196.github.io/MyPortfolio/pngFiles/AwesomeBooks.png');
+    background-image: url('https://Kgomotso196.github.io/MyPortfolio/pngFiles/budget.png');
     background-size: 405px 280px;
   }
 
   .container-3 {
+    background-image: url('https://Kgomotso196.github.io/MyPortfolio/pngFiles/shows.png');
+    background-size: 500px 350px;
+  }
+
+  .container-4 {
+    background-image: url('https://Kgomotso196.github.io/MyPortfolio/pngFiles/Capstone.png');
+    background-size: 430px 280px;
+  }
+
+  .container-5 {
+    background-image: url('https://Kgomotso196.github.io/MyPortfolio/pngFiles/AwesomeBooks.png');
+    background-size: 405px 280px;
+  }
+
+  .container-6 {
     background-image: url('https://Kgomotso196.github.io/MyPortfolio/pngFiles/ToDos.png');
     background-size: 500px 350px;
   }
@@ -367,17 +397,33 @@ h4 {
 }
 
 @media (max-width: 767px) {
+
   .container-1 {
-    background-image: url('https://Kgomotso196.github.io/MyPortfolio/pngFiles/Capstone.png');
+    background-image: url('https://Kgomotso196.github.io/MyPortfolio/pngFiles/house.png');
     background-size: 375px 280px;
   }
 
   .container-2 {
-    background-image: url('https://Kgomotso196.github.io/MyPortfolio/pngFiles/AwesomeBooks.png');
+    background-image: url('https://Kgomotso196.github.io/MyPortfolio/pngFiles/budget.png');
     background-size: 325px 280px;
   }
 
   .container-3 {
+    background-image: url('https://Kgomotso196.github.io/MyPortfolio/pngFiles/shows.png');
+    background-size: 385px 375px;
+  }
+
+  .container-4 {
+    background-image: url('https://Kgomotso196.github.io/MyPortfolio/pngFiles/Capstone.png');
+    background-size: 375px 280px;
+  }
+
+  .container-5 {
+    background-image: url('https://Kgomotso196.github.io/MyPortfolio/pngFiles/AwesomeBooks.png');
+    background-size: 325px 280px;
+  }
+
+  .container-6 {
     background-image: url('https://Kgomotso196.github.io/MyPortfolio/pngFiles/ToDos.png');
     background-size: 385px 375px;
   }
